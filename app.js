@@ -80,3 +80,35 @@ function forResult(){
         document.write(`Your Number is invalid.`);
     }
 }
+
+/***
+if you get more then 80 then inside your friend score. 
+    If your friend get more than 80. then go for a lunch. 
+    if your friend get below 80 but greater than or equal 60 then tell your friend, good luck next time. 
+    if your friend get less than 60 but more than or equal to 40 then, keep your friend's message unseen.
+    if your friend get less than 40, block your friend
+if you get less than 80 go to home and sleep and act sad
+
+Note: 
+use nested if-else-if-else
+*/
+function forInvitation(){
+    let myNumber = parseFloat(prompt(`Enter Your one sub Number :`));
+    let friend_number = parseFloat(prompt(`Enter Your friend one sub Number :`));
+    
+    if( friend_number >= 80){
+        document.write(`Lets go to lunch`)
+    }
+    else if( friend_number < 80 || friend_number >= 60){
+        document.write(`Good luch next time.`)
+    }
+    else if( friend_number < 60 || friend_number >= 40){
+        document.write(`keep your friend's message unseen.`)
+    }
+    else if( friend_number <= 40){
+        document.write(`block your friend`)
+    }
+    else if(myNumber < 80){
+        Document.write(`ami o kom paici bro`)
+    }
+}
