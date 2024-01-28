@@ -112,3 +112,30 @@ function forInvitation(){
         Document.write(`ami o kom paici bro`)
     }
 }
+
+/***
+
+you have two numbers in two variables, called: num1, num2
+
+now declare a variable called result. 
+if num1 is bigger than num2 then result will be double of num1. if not, then the value of the variable result will be the sum of num1 and num2.
+
+write a simple if-else. 
+
+also, write it using ternary operator.
+
+ */
+
+function makeBigOne(){
+    let num1, num2, result;
+    num1 = parseFloat(prompt(`Enter Your favorite Number 1:`));
+    num2 = parseFloat(prompt(`Enter Your favorite Number 2 :`));
+    result = num1 * 2 ;
+    num1 > num2 ? 
+
+    document.write( `It's bigger than num2. Num1 is = ` + num1 + `. Double value of Number of 1 = `+  result) : 
+
+        document.write(`Big Number is Number 2. It's value =` + num2);
+        
+}
+
