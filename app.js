@@ -147,19 +147,22 @@ Ticket fare Calculator
     - Otherwise Regular ticket fare 800 tk
 */
 
-let age, student, ticket ;
-age = 35 ;
-ticket = 800;
-student = true;
-if( age < 10){
-    document.write(`It's free for kids `);
-}
-else if(student){
-    document.write(`As a student, you have to pay half ` + ticket / 2);
-}
-else if( age >= 60){
-    document.write(`As a Senior citizens gets a 15% Discount, you have to pay - `+ ticket * 15/100 );
-}
-else{
-    document.write(`Regular ticket fare =` + ticket);
+function studentdiscount(){
+    let age, student, ticket, profseion;
+    age = parseFloat(prompt(`Enter Your age:`));
+    ticket = 800;
+    profseion = prompt(`Enter your proffession :`);
+    student = true;
+    if( age < 10){
+        document.write(`It's free for kids `);
+    }
+    else if(profseion.toLowerCase() === 'student'){
+        document.write(`As a student, you have to pay half ` + ticket / 2);
+    }
+    else if( age >= 60){
+        document.write(`As a Senior citizens gets a 15% Discount, you have to pay - `+ ticket * 15/100 );
+    }
+    else{
+        document.write(`Regular ticket fare =` + ticket);
+    }
 }
